@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Shopping web app </title>
+    <style>
+        body {
+            padding: 0%;
+            margin: 0%;
+        }
+
+        .profile-container {
+            background-color: rgb(255, 255, 255);
+            padding: 50px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+           
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        .shopping-card {
+            height: 300px;
+            width: 200px;
+            background-color: whitesmoke;
+            border: 1px solid black;
+            padding: 20px;
+            margin: 10px;
+            margin-bottom: 60px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .product-pic {
+            height: 150px;
+            width: 200px;
+            background-color: white;
+            border: 1px solid black;
+            margin-bottom: 10px;
+        }
+
+        .product-details {
+            text-align: center;
+        }
+
+        .product-name {
+            font-size: 16px;
+            margin-bottom: 5px;
+        }
+
+        .product-price {
+            font-size: 14px;
+            color: #007bff;
+        }
+
+        .navbar {
+            background-color: #cfdcf9;
+            width: 100%;
+            height: 60.5px;
+            position: sticky;
+            top: 0px;
+            display: flex;
+            justify-content: space-around;
+            z-index: 10;
+        }
+
+        .nav-items {
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+        }
+
+        .nav-text {
+            margin-left: 30px;
+            font-size: 20px;
+            color: rgb(26, 4, 4);
+        }
+
+        .img {
+            height: 30px;
+            border-radius: 50%;
+            margin-right: -20px;
+        }
+
+        /* Small Devices */
+        @media screen and (max-width: 600px) {
+            .profile-card {
+                height: 250px;
+                width: calc(50% - 20px);
+            }
+        }
+
+        /* Normal Devices */
+        @media screen and (min-width: 600px) and (max-width: 768px) {
+            .profile-card {
+                width: calc(33.33% - 20px);
+            }
+        }
+
+        /* Tablets Devices */
+        @media screen and (min-width: 769px) and (max-width: 992px) {
+            .profile-card {
+                width: calc(25% - 20px);
+            }
+        }
+
+        /* Large Devices */
+        @media screen and (min-width: 993px) and (max-width: 1200px) {
+            .profile-card {
+                width: calc(20% - 20px);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="nav-items">
+            <img src="home.png" class="img">
+            <span class="nav-text">Home </span>
+        </div>
+        <div class="nav-items">
+            <img src="clipboard.png" class="img">
+            <span class="nav-text">Orders </span>
+        </div>
+        <div class="nav-items">
+            <img src="shopping-cart.png" class="img">
+            <span class="nav-text">Cart </span>
+        </div>
+        <div class="nav-items">
+            <img src="menu.png" class="img">
+            <span class="nav-text">Menu </span>
+        </div>
+        <div class="nav-items">
+            <img src="settings.png" class="img">
+            <span class="nav-text">Settings </span>
+        </div>
+    </div>
+    <div class="profile-container">
+        <div class="shopping-card">
+            <img src="watch1.jpg" alt="watch1" class="product-pic">
+            <div class="product-details">
+                <p class="product-name">Emporio Armani</p>
+                <p class="product-price">$19.99</p>
+            </div>
+        </div>
+
+       
+        
+    </div>
+</body>
+
+</html>
